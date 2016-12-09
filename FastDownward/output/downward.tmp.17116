@@ -1,0 +1,401 @@
+begin_version
+3
+end_version
+begin_metric
+0
+end_metric
+6
+begin_variable
+var1
+-1
+2
+Atom at(arthur, clearing)
+Atom at(arthur, woods)
+end_variable
+begin_variable
+var0
+-1
+2
+Atom asleep(merlin)
+NegatedAtom asleep(merlin)
+end_variable
+begin_variable
+var4
+-1
+2
+Atom at(merlin, clearing)
+Atom at(merlin, woods)
+end_variable
+begin_variable
+var2
+-1
+3
+Atom at(book, woods)
+Atom has(arthur, book)
+Atom has(merlin, book)
+end_variable
+begin_variable
+var6
+-1
+2
+Atom enchanted(excalibur)
+NegatedAtom enchanted(excalibur)
+end_variable
+begin_variable
+var3
+-1
+3
+Atom at(excalibur, clearing)
+Atom has(arthur, excalibur)
+Atom has(merlin, excalibur)
+end_variable
+0
+begin_state
+1
+0
+0
+0
+0
+0
+end_state
+begin_goal
+1
+5 1
+end_goal
+13
+begin_operator
+disenchant-thing arthur excalibur book clearing
+3
+0 0
+3 1
+5 0
+1
+0 4 0 1
+0
+end_operator
+begin_operator
+disenchant-thing merlin excalibur book clearing
+4
+1 1
+3 2
+5 0
+2 0
+1
+0 4 0 1
+0
+end_operator
+begin_operator
+disenchant-thing merlin excalibur spellbook clearing
+3
+1 1
+5 0
+2 0
+1
+0 4 0 1
+0
+end_operator
+begin_operator
+move-location arthur clearing woods
+0
+1
+0 0 1 0
+0
+end_operator
+begin_operator
+move-location arthur woods clearing
+0
+1
+0 0 0 1
+0
+end_operator
+begin_operator
+move-location merlin clearing woods
+1
+1 1
+1
+0 2 1 0
+0
+end_operator
+begin_operator
+move-location merlin woods clearing
+1
+1 1
+1
+0 2 0 1
+0
+end_operator
+begin_operator
+take-thing arthur book woods
+1
+0 1
+1
+0 3 0 1
+0
+end_operator
+begin_operator
+take-thing arthur excalibur clearing
+2
+0 0
+4 1
+1
+0 5 0 1
+0
+end_operator
+begin_operator
+take-thing merlin book woods
+1
+2 1
+1
+0 3 0 2
+0
+end_operator
+begin_operator
+take-thing merlin excalibur clearing
+2
+2 0
+4 1
+1
+0 5 0 2
+0
+end_operator
+begin_operator
+wake-person arthur merlin clearing
+2
+0 0
+2 0
+1
+0 1 0 1
+0
+end_operator
+begin_operator
+wake-person arthur merlin woods
+2
+0 1
+2 1
+1
+0 1 0 1
+0
+end_operator
+0
+begin_SG
+switch 1
+check 0
+switch 0
+check 0
+switch 2
+check 0
+check 1
+11
+check 0
+check 0
+switch 2
+check 0
+check 0
+check 1
+12
+check 0
+check 0
+switch 3
+check 0
+check 0
+check 0
+switch 5
+check 0
+switch 2
+check 0
+switch 4
+check 0
+check 1
+1
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+switch 5
+check 0
+switch 2
+check 0
+switch 4
+check 0
+check 1
+2
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+switch 2
+check 0
+check 1
+6
+check 1
+5
+check 0
+switch 0
+check 0
+switch 3
+check 1
+4
+check 0
+switch 5
+check 0
+switch 4
+check 0
+check 1
+0
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+switch 5
+check 0
+switch 4
+check 0
+check 0
+check 1
+8
+check 0
+check 0
+check 0
+check 0
+switch 3
+check 1
+3
+check 1
+7
+check 0
+check 0
+check 0
+switch 3
+check 0
+switch 2
+check 0
+check 0
+check 1
+9
+check 0
+check 0
+check 0
+switch 5
+check 0
+switch 2
+check 0
+switch 4
+check 0
+check 0
+check 1
+10
+check 0
+check 0
+check 0
+check 0
+check 0
+check 0
+end_SG
+begin_DTG
+1
+1
+4
+0
+1
+0
+3
+0
+end_DTG
+begin_DTG
+2
+1
+11
+2
+0 0
+2 0
+1
+12
+2
+0 1
+2 1
+0
+end_DTG
+begin_DTG
+1
+1
+6
+1
+1 1
+1
+0
+5
+1
+1 1
+end_DTG
+begin_DTG
+2
+1
+7
+1
+0 1
+2
+9
+1
+2 1
+0
+0
+end_DTG
+begin_DTG
+2
+1
+0
+3
+0 0
+3 1
+5 0
+1
+2
+3
+1 1
+5 0
+2 0
+0
+end_DTG
+begin_DTG
+2
+1
+8
+2
+0 0
+4 1
+2
+10
+2
+2 0
+4 1
+0
+0
+end_DTG
+begin_CG
+4
+1 2
+3 1
+5 1
+4 1
+2
+2 2
+4 2
+4
+1 2
+3 1
+5 1
+4 2
+1
+4 2
+1
+5 2
+1
+4 3
+end_CG

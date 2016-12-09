@@ -1,0 +1,9 @@
+INSTALL INST
+
+32-bit Cygwin
+
+sudo apt-get install mercurial g++ make python flex bison gawk gcc
+
+cd ./FastDownward
+cd ./src
+./build_all
